@@ -1,0 +1,2 @@
+registry=http://maven.sc.steeleye.com/nexus/content/groups/public-npm/
+bin-links=true
