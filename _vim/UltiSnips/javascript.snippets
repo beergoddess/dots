@@ -292,6 +292,24 @@ snippet anm "Define a service's method"
 * @ngdoc method
 * @name ${1:methodName}
 * @methodOf ${2:`!p snip.rv = modFromFileName()`}.${3:`!p snip.rv = srvFromFileName()`}
+* @param ${6}
+* @return {${4}} ${5}
+* @description
+* $0
+*/
+self.$1 = function() {
+    var name = '$3.$1';
+
+    return;
+};
+endsnippet
+
+
+snippet anmm "Define a service's method. Try to autofill some stuff"
+/**
+* @ngdoc method
+* @name ${1:methodName}
+* @methodOf ${2:`!p snip.rv = modFromFileName()`}.${3:`!p snip.rv = srvFromFileName()`}
 ${7:`!p snip.rv = paramsFromList(snip.v.text)`}
 * @return {${5}} ${6}
 * @description

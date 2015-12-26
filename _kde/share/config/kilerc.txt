@@ -4,6 +4,12 @@ update_info=kile.upd:Kile1.5v1,kile.upd:Kile1.6v1,kile.upd:Kile1.7v1,kile.upd:Ki
 [Desktop Entry]
 DefaultProfile=Shell.profile
 
+[Document-Settings,URL=]
+Bookmarks=
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
 [Favorite Profiles]
 Favorites=
 
@@ -21,16 +27,17 @@ listViewIconSize=0
 lastDir[$e]=$HOME/
 
 [FilesOpenOnStart]
-NoDOOS=0
+EncodingsOfDocsOpenOnStart0[$e]=UTF-8
+NoDOOS=1
 NoPOOS=0
 
 [Geometries]
-MainwindowHeight=682
-MainwindowWidth=1364
-horizontalSplitterLeft=355
-horizontalSplitterRight=1003
-verticalSplitterBottom=132
-verticalSplitterTop=463
+MainwindowHeight=840
+MainwindowWidth=1719
+horizontalSplitterLeft=448
+horizontalSplitterRight=1265
+verticalSplitterBottom=167
+verticalSplitterTop=586
 
 [IncludeGraphics]
 imagemagick=true
@@ -122,19 +129,25 @@ Search Pattern History=
 Search/Replace Flags=140
 Show Scrollbars=0
 Smart Copy Cut=false
-Vi Input Mode=false
+Vi Input Mode=true
 Vi Input Mode Emulate Command Bar=false
-Vi Input Mode Steal Keys=false
+Vi Input Mode Steal Keys=true
 Vi Relative Line Numbers=false
 Word Completion=true
 Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
+[KileConfigDialog]
+Height 1080=642
+Width 1920=861
+
 [KileMainWindow]
+Height 1080=840
 Height 768=682
-State=AAAA/wAAAAD9AAAAAAAABVQAAAJZAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAQAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGAB0AG8AbwBsAHMAVABvAG8AbABCAGEAcgEAAADh/////wAAAAAAAAAAAAAAFgBlAGQAaQB0AFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAABYAbQBhAHQAaABUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
+State=AAAA/wAAAAD9AAAAAAAABrcAAAL3AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAQAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGAB0AG8AbwBsAHMAVABvAG8AbABCAGEAcgEAAADh/////wAAAAAAAAAAAAAAFgBlAGQAaQB0AFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAABYAbQBhAHQAaABUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
 Width 1366=1364
+Width 1920=1719
 
 [MainWindow]
 Height 768=668
@@ -146,17 +159,22 @@ Width 1366=1266
 counts=
 paths=
 
+[NewFileWizard]
+UseWizardWhenCreatingEmptyFile=false
+height=432
+width=960
+
 [QuickPreview]
 convert=true
 dvipng=true
 
 [Session Settings]
-Documents=file:///tmp/kde-tgoldie/kile9nxaMc/test_index.tex
-Saved Documents=file:///tmp/kde-tgoldie/kile9nxaMc/test_index.tex,file:///tmp/kde-tgoldie/kile9nxaMc/test_bib.tex,file:///tmp/kde-tgoldie/kile9nxaMc/test.tex,file:///tmp/kde-tgoldie/kile9nxaMc/test_plain.tex
+Documents=
+Saved Documents=,file:///tmp/kde-tgoldie/kile9nxaMc/test_index.tex,file:///tmp/kde-tgoldie/kile9nxaMc/test_bib.tex,file:///tmp/kde-tgoldie/kile9nxaMc/test.tex,file:///tmp/kde-tgoldie/kile9nxaMc/test_plain.tex
 
 [Show]
-BottomBarSize=108
-SideBarSize=331
+BottomBarSize=143
+SideBarSize=424
 
 [Tool/Archive/Tar]
 class=Archive
@@ -1032,6 +1050,15 @@ nUserTags=0
 [VersionInfo]
 RCVersion=7
 
+[View-Settings,View=0,URL=]
+CursorColumn=2
+CursorLine=2
+JumpList=
+ViMarks=.,2,3,[,2,0,],2,3,^,2,3
+ViRegisterContents=fff
+ViRegisterFlags=0
+ViRegisterNames=^
+
 [View-Settings,View=0,URL=file:///tmp/kde-tgoldie/kile9nxaMc/test.tex]
 CursorColumn=0
 CursorLine=0
@@ -1055,3 +1082,6 @@ CursorColumn=0
 CursorLine=0
 JumpList=
 ViMarks=
+
+[default]
+NewFileWizardSelectedIconLaTeX=Empty File

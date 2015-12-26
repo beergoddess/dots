@@ -1,4 +1,8 @@
-# vim: ft=config
+# vim: ft=sshconfig
+Host beeryard beeryard.* ingress.steeleye.com
+    PasswordAuthentication no
+    IdentityFile ~/.sshkeys/beeryard_key
+
 Host *.sc.steeleye.com *.steeleye.com 172.17.*
     #Only allow SSH 2
     Protocol 2

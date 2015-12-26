@@ -53,7 +53,7 @@ autocmd BufNewFile,BufRead *.gs set syntax=javascript
 " Autocmd to fix broken regex
 
 " JavaScript-libraries-syntax - Setup which libs are in use
-let g:used_javascript_libs = 'angularjs,angularui,jasmine,jquery,underscore'
+let g:used_javascript_libs = 'angularjs,angularui,jasmine,jquery,underscore,lodash'
 
 " Enable HTML/CSS highlighting in JS file
 let javascript_enable_domhtmlcss = 1
@@ -67,12 +67,12 @@ let g:javascript_conceal = 0
 " Ignore JSDoc syntax
 "let javascript_ignore_javaScriptdoc = 0
 
-" Tern - Show argument hints - ''
+"" Tern - Show argument hints - ''
 let tern_show_argument_hints = 'on_move'
 
-autocmd Filetype javascript nnoremap <A-d> :TernDef<CR>
-autocmd Filetype javascript nnoremap <A-r> :TernRename<CR>
-autocmd Filetype javascript nnoremap <A-t> :TernRefs<CR>
+autocmd Filetype javascript nnoremap <M-d> :TernDef<CR>
+autocmd Filetype javascript nnoremap <M-r> :TernRename<CR>
+autocmd Filetype javascript nnoremap <M-t> :TernRefs<CR>
 
 " Auto adds a ';' to the end of a line.
 "autocmd Filetype javascript let b:delimitMate_eol_marker=';'

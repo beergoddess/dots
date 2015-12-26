@@ -88,7 +88,7 @@ let g:gundo_auto_preview = 1
 "" Settings
 let g:session_directory = $VIMBACKUP
 " Options: 'prompt', 'yes', 'no'
-let g:session_autosave = 'no'
+let g:session_autosave = 'yes'
 let g:session_autosave_periodic = 10
 let g:session_default_overwrite = 1
 let g:session_extension = '.vim'

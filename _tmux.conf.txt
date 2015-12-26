@@ -63,11 +63,10 @@ set-option -g status-keys vi
 # Basic Config
 #-------------------------------------------------------------
 #set-window-option -g window-status-current-bg green
-#set-window-option -g automatic-rename on
+set-window-option -g automatic-rename on
 set-option -g history-limit 100000
 #set-option -s escape-time 0
 set-option -g default-terminal "xterm-256color"
-#set-option -g default-terminal "gnome"
 
 # Enable mouse mode
 set-option -g mode-mouse on
@@ -93,6 +92,10 @@ bind r source-file ~/.tmux.conf
 # Hit C-\ twice to go to last window
 bind-key C-\ last-window
 bind-key / command-prompt "split-window 'exec man %%'"
+
+# Kick off build
+#bind-key C-e command-prompt "new-window 'exec notifyerror $HOME/ui/utils/push.sh -b minion4.sc.steeleye.com'"
+bind-key C-e command-prompt "new-window 'exec notifyerror $HOME/ui/utils/push.sh -b %%'"
 
 # Vim's definition of a horizontal/vertical split is reversed from tmux's
 bind s split-window -v -c "#{pane_current_path}"
@@ -181,11 +184,11 @@ setw -g window-status-current-format "#[fg=colour234,bg=colour237,nobold,nounder
 #setw -g window-status-current-format "#[fg=colour234,bg=colour237,nobold,nounderscore,noitalics]#[fg=colour144,bg=colour237] #I #[fg=colour144,bg=colour237] #{pane_current_path} #[fg=colour144,bg=colour237] #W #[fg=colour237,bg=colour234,nobold,nounderscore,noitalics]"
 
 #-------------------------------------------------------------
+# Start TPM - Use to setup tpm
+#-------------------------------------------------------------
+run-shell '~/.tmux/plugins/tpm/tpm'
+
+#-------------------------------------------------------------
 # Start Net Speed - Creates file for storing values
 #-------------------------------------------------------------
 run-shell "~/.tmux/plugins/tmux-net-speed/init.sh"
-
-#-------------------------------------------------------------
-# Start TPM - Must be last line
-#-------------------------------------------------------------
-run-shell '~/.tmux/plugins/tpm/tpm'
